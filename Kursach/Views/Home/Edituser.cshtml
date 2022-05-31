@@ -1,0 +1,31 @@
+﻿@model Kursach.Models.User
+@{
+    ViewBag.Title = "Изменения пользователя";
+}
+<form asp-action="edit" asp-controller="home">
+    <input type="hidden" asp-for="Id_user" />
+    <div class="form-group">
+        <input type="email" placeholder="Введите почту" asp-for="Email" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="text" placeholder="Введите логин" asp-for="Login" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="text" placeholder="Введите пароль" asp-for="Password" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="text" placeholder="Введите Имя" asp-for="Ima" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="text" placeholder="Введите Фамилию" asp-for="Familia" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="text" placeholder="Введите Отчество" asp-for="Otchestvo" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="date" placeholder="Дата рождения" asp-for="DataR" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Изменить" class="btn btn-default" />
+    </div>
+</form>

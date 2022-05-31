@@ -1,0 +1,37 @@
+﻿@model Kursach.Models.Modeli
+@{
+    ViewBag.Title = "Удаление поста";
+}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="~/css/StyleSheet.css" />
+<section class="form">
+    <div class="contanier avtoriz">
+        <h2 class="title">Удаление</h2>
+            <dl class="delete">
+                <dt>Id</dt>
+                <dd>
+                    @Html.DisplayFor(model => model.ID_Model)
+                </dd>
+                <dt>Автор</dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Model)
+                </dd>
+                <dt>Название Книги</dt>
+                <dd>
+                    @Html.DisplayFor(model => model.skidki)
+                </dd>
+                </dl>
+        <form asp-controller="Home" asp-action="DeletePost" method="post">
+            <input type="submit" class="ssilka" value="Удалить" />
+        </form>
+        </div>
+        <footer class="footer">
+            <img src="/img/logofooter1.png" alt="Логотип" class="logofooter">
+            <p class="end">
+                © Все права защищены правообладателем
+            </p>
+        </footer>
+</section>

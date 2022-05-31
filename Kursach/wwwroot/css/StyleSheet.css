@@ -1,0 +1,249 @@
+﻿body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0px;
+    font-size: 16px;
+}
+
+div, p, input, button, form, span, a, ul, li {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.p {
+    line-height: 1.65em;
+}
+
+.contanier {
+    background: url(../img/back.png);
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.first {
+    width: 700px;
+}
+
+.second {
+    margin-top: 50px;
+}
+
+.tree {
+    margin-top: 95px;
+}
+
+.avtoriz {
+    height: 600px;
+}
+
+.header {
+    background: url(/img/back.png);
+}
+
+.shapka {
+    background: #f2f2f0;
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.logofooter {
+    width: 100px;
+}
+
+.button {
+    border-radius: 20px;
+    padding: 22px 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    display: block;
+    width: 150px;
+    text-align: center;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+    .button:hover {
+        opacity: 0.9;
+        background: #39445f;
+    }
+
+.title {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+    color: #39445f;
+    padding-right: 30px;
+}
+
+.form {
+    background: url(../img/back23.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+}
+
+.email {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.glav {
+    margin-top: 60px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+
+.input {
+    border-radius: 8px;
+    padding-left: 30px;
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 10px;
+    transition: all 0.5s ease;
+    outline: none;
+    background: none;
+    border: 4px solid #E7E7E7;
+    color: white;
+}
+
+    .input:focus {
+        border-radius: 15px;
+        width: 300px;
+        height: 55px;
+    }
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+.btnform {
+    border: 6px solid #39445f;
+    cursor: pointer;
+    width: 400px;
+    margin-top: 40px;
+    background: none;
+    font-size: 20px;
+    margin-left: 150px;
+}
+.btnformi {
+    border: 6px solid #39445f;
+    cursor: pointer;
+    width: 400px;
+    background: none;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+.btnformi1 {
+    border: 6px solid #39445f;
+    cursor: pointer;
+    width: 400px;
+    background: none;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-bottom: 150px;
+}
+
+.footer {
+    background: #39445f;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.end {
+    font-size: 14px;
+    color: #eaedf0;
+    text-align: center;
+}
+
+.ssilka {
+    color: #39445f;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+.table {
+    color: white;
+}
+TD, TH {
+    padding: 10px;
+    border: 2px solid white;
+}
+
+TH {
+    background: #39445f;
+}
+
+.polz {
+    display: grid;
+    justify-content: end;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+.delete {
+    color: white;
+}
+
+.cena {
+    color: white;
+    font-family: 'PT Serif', serif;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.vtoraya {
+    margin-left: 400px;
+    padding-bottom: 5px;
+}
+
+.cross {
+    width: 500px;
+    float: right; 
+    margin: 0px -450px 0px 0px;
+    border-radius: 50px;
+}
+
+.vans {
+    width: 300px;
+    float: left;
+    margin-left: 70px;
+}
+
+.skidkacross {
+    width: 400px;
+    float: right;
+    margin-right: 70px;
+}
+.ili {
+    margin-left: 300px;
+    margin-top: 20px;
+}

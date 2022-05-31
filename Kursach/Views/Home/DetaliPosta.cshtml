@@ -1,0 +1,60 @@
+﻿@model Kursach.Models.Modeli
+
+@{
+    ViewData["Title"] = "Подробнее о посте";
+}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="~/css/StyleSheet.css" />
+<section class="form">
+    <div class="contanier avtoriz">
+        <h2 class="title">Добавить пост</h2>
+        <div>
+            <dl class="delete">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.ID_Model)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.ID_Model)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Model)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Model)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.skidki)
+                </dt>
+                <dd class="col-sm-10">
+                    с
+                    @Html.DisplayFor(model => model.skidki)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.picture)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.picture)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.info)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.info)
+                </dd>
+
+            </dl>
+        </div>
+        <div>
+            <a asp-action="Post" class="ssilka">Вернуться</a>
+        </div>
+    </div>
+    <footer class="footer">
+        <img src="/img/logofooter1.png" alt="Логотип" class="logofooter">
+        <p class="end">
+            © Все права защищены правообладателем
+        </p>
+    </footer>
+</section>

@@ -1,0 +1,46 @@
+﻿@model Kursach.Models.Modeli
+
+@{
+    ViewData["Title"] = "Подробнее о посте";
+}
+<h1>Подробнее о книге</h1>
+
+<div>
+    <h4>Книги</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ID_Model)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ID_Model)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Model)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Model)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.skidki)
+        </dt>
+        <dd class="col-sm-10">
+            с
+            @Html.DisplayFor(model => model.skidki)
+        </dd>
+        <dd class="col-sm-10">
+            <img style="width: 500px;" class="ClassForImg"
+                 src="@Html.DisplayFor(model => model.picture)" />
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.info)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.info)
+        </dd>
+
+    </dl>
+</div>
+<div>
+    <a asp-action="GlavnayaUser">обратно</a>
+</div>

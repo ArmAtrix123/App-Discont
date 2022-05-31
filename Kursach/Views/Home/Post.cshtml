@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Kursach.Models.Modeli>
+
+@{
+    ViewData["Title"] = "Посты";
+}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="~/css/StyleSheet.css" />
+<section class="form">
+    <div class="contanier avtoriz">
+        <h2 class="title">Добавить пост</h2>
+       
+            <table class="table"> 
+                <tr>
+                    <th>ID</th>
+                    <th>Пост</th>
+                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.ID_Model</td>
+                        <td>@item.Model</td>
+                        <td><a asp-action="DetaliPosta" asp-controller="home" asp-route-id="@item.ID_Model" class="ssilka">Подробнее</a></td>
+                        <td><a asp-action="DeletePost" asp-controller="home" asp-route-id="@item.ID_Model"class="ssilka">X</a></td>
+                        <td><a asp-action="EditPost" asp-controller="home" asp-route-id="@item.ID_Model"class="ssilka">Изменить</a></td>
+                    </tr>
+                }
+            </table>
+        <form asp-action="NewPost" asp-controller="home">
+                <input type="submit" value="Добавить Пост" class="button btnformi">
+        </form>
+        <form asp-action="Index" asp-controller="home">
+                <input type="submit" value="Вернуться" class="button btnformi" />
+        </form>
+    </div>
+    <footer class="footer">
+        <img src="/img/logofooter1.png" alt="Логотип" class="logofooter">
+        <p class="end">
+            © Все права защищены правообладателем
+        </p>
+    </footer>
+</section>

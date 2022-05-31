@@ -1,0 +1,79 @@
+﻿@model IndexViewModel
+@{
+    ViewData["Title"] = "Все пользователи";
+}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="~/css/StyleSheet.css" />
+<section class="form">
+    <div class="contanier avtoriz">
+        <h2 class="title">Админ Панель</h2>
+        <a asp-action="Glavnaya" class="ssilka">Назад</a>
+        <a asp-action="create" class="ssilka">Добавить пользователя</a>
+        <form method="get" asp-action="index">
+            <label class="col-form-label-lg form-group">ID: </label>
+            <input type="number" name="id" value="@Model.FilterViewModel.SelectId" min="1" class="form-group" />
+            <label class="col-form-label-lg form-group">Email: </label>
+            <input type="text" name="login" value="@Model.FilterViewModel.SelectEmail" class="form-group" />
+            <input type="submit" class="ssilka" value="Поиск" />
+        </form>
+        <table class="table">
+            <tr>
+                <th>
+                    <a asp-action="index" asp-route-sortOrder="@Model.SortViewModel.IdSort"
+                       asp-route-id="@Model.FilterViewModel.SelectId"
+                       asp-route-login="@Model.FilterViewModel.SelectEmail">
+                        ID
+                    </a>
+                </th>
+                <th>
+                    <a asp-action="index" asp-route-sortOrder="@Model.SortViewModel.EmailSort"
+                       asp-route-id="@Model.FilterViewModel.SelectId"
+                       asp-route-login="@Model.FilterViewModel.SelectEmail">
+                        Email
+                    </a>
+                </th>
+                <th>Логин</th>
+                <th>Пароль</th>
+            </tr>
+            @foreach (var item in Model.Users)
+            {
+                <tr>
+                    <td>@item.Id_user</td>
+                    <td>@item.Email</td>
+                    <td>@item.Login</td>
+                    <td>@item.Password</td>
+                    <td><a asp-action="Details" asp-controller="home" asp-route-id="@item.Id_user" class="ssilka">Подробнее</a></td>
+                    <td><a asp-action="Delete" asp-controller="home" asp-route-id="@item.Id_user" class="ssilka">X</a></td>
+                    <td><a asp-action="Edit" asp-controller="home" asp-route-id="@item.Id_user" class="ssilka">Изменить</a></td>
+                </tr>
+            }
+            @if (Model.PageViewModel.HasPreviousPage)
+            {
+                <a asp-action="index" asp-route-page="@(Model.PageViewModel.PageNumber-1)"
+                   asp-route-sortOrder="@Model.SortViewModel.Current"
+                   asp-route-id="@Model.FilterViewModel.SelectId"
+                   asp-route-login="@Model.FilterViewModel.SelectEmail">Назад</a>
+            }
+            @if (Model.PageViewModel.HasNextPage)
+            {
+                <a asp-action="index" asp-route-page="@(Model.PageViewModel.PageNumber+1)"
+                   asp-route-sortOrder="@Model.SortViewModel.Current"
+                   asp-route-id="@Model.FilterViewModel.SelectId"
+                   asp-route-login="@Model.FilterViewModel.SelectEmail">Вперед</a>
+            }
+        </table>
+
+        <form asp-action="Post" asp-controller="home">
+            <input type="submit" value="Посты" class="ssilka" />
+        </form>
+    </div>
+        <footer class="footer">
+            <img src="/img/logofooter1.png" alt="Логотип" class="logofooter">
+            <p class="end">
+                © Все права защищены правообладателем
+            </p>
+        </footer>
+</section>

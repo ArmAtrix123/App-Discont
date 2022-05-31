@@ -1,0 +1,75 @@
+﻿@model Kursach.Models.User
+
+@{
+    ViewData["Title"] = "Подробная информация";
+}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="~/css/StyleSheet.css" />
+<section class="form">
+    <div class="contanier">
+        <h2 class="title">Подробнее</h2>
+        <hr />
+        <dl class="delete">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Id_user)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Id_user)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Login)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Login)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Password)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Password)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Familia)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Familia)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Ima)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Ima)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Otchestvo)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Otchestvo)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.DataR)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.DataR)
+            </dd>
+        </dl>
+        <a asp-action="Index" class="ssilka">Назад</a>
+    </div>
+    <footer class="footer">
+        <img src="/img/logofooter1.png" alt="Логотип" class="logofooter">
+        <p class="end">
+            © Все права защищены правообладателем
+        </p>
+    </footer>
+</section>

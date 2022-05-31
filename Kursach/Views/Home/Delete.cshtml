@@ -1,0 +1,44 @@
+﻿@model Kursach.Models.User
+@{
+    ViewBag.Title = "Удаления пользователя";
+}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="~/css/StyleSheet.css" />
+<section class="form">
+    <div class="contanier avtoriz">
+        <h2 class="title">Удаление</h2>
+        <div class="delete">
+            <dl class="delete">
+                <dt>Id</dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Id_user)
+                </dd>
+                <dt>Email</dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Email)
+                </dd>
+                <dt>Login</dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Login)
+                </dd>
+                <dt>Password</dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Password)
+                </dd>
+
+            </dl>
+        </div>
+        <form asp-controller="Home" asp-action="Delete" method="post" class="email">
+               <input type="submit" class="button btnformi" value="Удалить" />
+        </form>
+        </div>
+        <footer class="footer">
+            <img src="/img/logofooter1.png" alt="Логотип" class="logofooter">
+            <p class="end">
+                © Все права защищены правообладателем
+            </p>
+        </footer>
+</section>

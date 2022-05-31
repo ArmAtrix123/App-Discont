@@ -1,0 +1,41 @@
+﻿@model Kursach.Models.User
+@{
+    ViewData["Title"] = "Главная";
+}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="~/css/StyleSheet.css" />
+<section class="form">
+    <div class="contanier">
+        <h2 class="title">Главная</h2>
+        <div class="first">
+            <img src="/img/cena.jpg" alt="Кроссы" class="cross">
+            <p class="cena"> В ШОКЕ ОТ <span style="color: #ff6600;">ЦЕН</span> НА ОДЕЖДУ?</p>
+            <p class="cena" style="font-size: 32px"> ДУМАЕШЬ, ЧТО <span style="color: #ff6600;">НЕ МОЖЕШЬ</span> КУПИТЬ?</p>
+        </div>
+        <div class="second">
+            <img src="/img/Vansi.jpg" alt="Кроссы" class="cross vans">
+            <p class="cena vtoraya"> УСТАЛ ХОДИТЬ В СТАРЫХ <span style="color: #ff6600;">VANS</span></p>
+            <p class="cena vtoraya" style="font-size: 35px"> И ХОЧЕШЬ <span style="color: #ff6600;">КУПИТЬ</span> СЕБЕ AIR FORCE?</p>
+            <p class="cena vtoraya" style="font-size: 38px"> ЕЩЕ И ХОЧЕТСЯ <span style="color: #ff6600;">ПОДЕШЕВЛЕ,</span> ДА?</p>
+        </div>
+        <div class="tree">
+            <img src="/img/skidka.jpg" alt="Кроссы" class="cross skidkacross">
+            <p class="cena three"> ТАК ДАВАЙ <span style="color: #ff6600;">МЫ ТЕБЕ </span> ПОМОЖЕМ</p>
+            <p class="cena three" style="font-size: 35px"> МЫ НАЙДЕМ И ПОКАЖЕМ <span style="color: #ff6600;">СКИДКУ</span></p>
+            <p class="cena three" style="font-size: 50px">А ТЕБЕ ВСЕГО-ТО <span style="color: #ff6600;">НУЖНО</span></p>
+            <a asp-action="Registration" class="button btnform">Зарегистрироваться</a>
+            <p class="cena ili">ИЛИ</p>
+            <a asp-action="Avtorization" class="button btnform">Авторизироваться</a>
+        </div>
+    </div>
+    <footer class="footer">
+        <img src="/img/logofooter1.png" alt="Логотип" class="logofooter">
+        <p class="end">
+            © Все права защищены правообладателем
+        </p>
+    </footer>
+</section>

@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Kursach.Models.Modeli>
+@{
+    ViewData["Title"] = "Новости";
+}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="~/css/StyleSheet.css" />
+<section class="form">
+    <div class="contanier">
+        <h2 class="title">Новости</h2>
+        <form class="glav">
+        <div class="polz" link="#39445f">
+            <a asp-action="DetaliStrUser" asp-controller="Home" >Ваши данные</a>
+            <a asp-action="EditStrUser" asp-controller="Home">Изменить данные</a>
+            <a asp-action="Glavnaya" asp-controller="Home">Выйти</a>
+        </div>
+        <table>
+            @foreach (var item in Model)
+            {
+                <tr><td style="border: 0px solid #cfb59f; color: white; font-size: 20px;">@item.Model</td></tr>
+                <tr><td style="border: 0px solid #cfb59f; color: white; font-size: 20px; ">@item.skidki</td></tr>
+                <tr><td style="border: 0px solid #cfb59f; color: white; font-size: 20px; "><img style="width: 500px;" class="ClassForImg" src="@item.picture" /></td></tr>
+                <tr><td style="border: 0px solid #cfb59f; color: white; font-size: 20px; ">@item.info</td></tr>
+            }
+        </table>
+        </form>
+    </div>
+    <footer class="footer">
+        <img src="/img/logofooter1.png" alt="Логотип" class="logofooter">
+        <p class="end">
+            © Все права защищены правообладателем
+        </p>
+    </footer>
+</section>
+

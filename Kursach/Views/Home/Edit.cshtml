@@ -1,0 +1,31 @@
+﻿@model Kursach.Models.User
+@{
+    ViewBag.Title = "Изменения пользователя";
+}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="~/css/StyleSheet.css" />
+<section class="form">
+    <div class="contanier">
+        <h2 class="title">Регистрация</h2>
+        <form asp-action="edit" asp-controller="home" class="email">
+            <input type="hidden" asp-for="Id_user" />
+            <input type="text" placeholder="Имя" asp-for="Ima" class="input" />
+            <input type="text" placeholder="Фамилия" asp-for="Familia" class="input" />
+            <input type="text" placeholder="Отчество" asp-for="Otchestvo" class="input" />
+            <input type="date" placeholder="Дата рождения" asp-for="DataR" class="input" />
+            <input type="email" placeholder="Почта" asp-for="Email" class="input" />
+            <input type="text" placeholder="Логин" asp-for="Login" class="input" />
+            <input type="password" placeholder="Пароль" asp-for="Password" class="input" />
+            <input type="submit" value="Изменить" class="button btnformi" />
+        </form>
+    </div>
+    <footer class="footer">
+        <img src="/img/logofooter1.png" alt="Логотип" class="logofooter">
+        <p class="end">
+            © Все права защищены правообладателем
+        </p>
+    </footer>
+</section>

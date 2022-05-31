@@ -1,0 +1,28 @@
+﻿@model Kursach.Models.Modeli
+@{
+    ViewBag.Title = "Добавление поста";
+}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="~/css/StyleSheet.css" />
+<section class="form">
+    <div class="contanier avtoriz">
+        <h2 class="title">Добавление поста</h2>
+        <form asp-action="NewPosti" asp-controller="Home" class="email">
+            <input type="text" placeholder="Название модели" asp-for="Model" class="input" />
+            <input type="text" placeholder="Скидка" asp-for="skidki" class="input" />
+            <input type="text" placeholder="Фотографирую закат" asp-for="picture" class="input" />
+            <input type="text" placeholder="Описание модели" asp-for="info" class="input" />
+            <input type="submit" value="Добавить пост" class="button btnformi" />
+            <input type="submit" value="Вернуться" class="button btnformi" asp-action="Index" asp-controller="home" />
+        </form>
+    </div>
+        <footer class="footer">
+            <img src="/img/logofooter1.png" alt="Логотип" class="logofooter">
+            <p class="end">
+                © Все права защищены правообладателем
+            </p>
+        </footer>
+</section>

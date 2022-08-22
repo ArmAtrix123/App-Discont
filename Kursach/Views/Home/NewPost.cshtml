@@ -6,23 +6,47 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="~/css/StyleSheet.css" />
-<section class="form">
-    <div class="contanier avtoriz">
-        <h2 class="title">Добавление поста</h2>
-        <form asp-action="NewPosti" asp-controller="Home" class="email">
-            <input type="text" placeholder="Название модели" asp-for="Model" class="input" />
-            <input type="text" placeholder="Скидка" asp-for="skidki" class="input" />
-            <input type="text" placeholder="Фотографирую закат" asp-for="picture" class="input" />
-            <input type="text" placeholder="Описание модели" asp-for="info" class="input" />
-            <input type="submit" value="Добавить пост" class="button btnformi" />
-            <input type="submit" value="Вернуться" class="button btnformi" asp-action="Index" asp-controller="home" />
-        </form>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="~/css/StyleRegist.css" />
+<header class="header" id="start">
+    <div class="container">
+        <div class="wrapper">
+            <div class="logo">
+                <img src="/img/Logo.png" alt="Logo">
+            </div>
+            <nav class="navigation">
+                <a asp-action="Post" asp-controller="home" class="li">Назад</a>
+                <a asp-action="Glavnaya" class="li">Выйти</a>
+            </nav>
+        </div>
+        <div class="button-navigation">
+            <button class="scroll-bar">
+                <a href="#start"><img src="/img/scroll-up.svg" alt="scroll-bar"></a>
+            </button>
+        </div>
     </div>
-        <footer class="footer">
-            <img src="/img/logofooter1.png" alt="Логотип" class="logofooter">
-            <p class="end">
-                © Все права защищены правообладателем
-            </p>
-        </footer>
+</header>
+<section class="contact conta" id="contact-id">
+    <div class="contant-wrapper">
+        <div class="Cont">
+            <div class="title-contact">
+                <h2>Создание поста</h2>
+            </div>
+        </div>
+    </div>
+    <div class="review-wrapper">
+        <div class="form">
+            <form asp-action="NewPosti" asp-controller="Home" class="review">
+                <input type="text" placeholder="Название модели" asp-for="Model" class="input" />
+                <input type="text" placeholder="Скидка" asp-for="skidki" class="input" />
+                <input type="text" placeholder="Ссылка на фото" asp-for="picture" class="input" />
+                <input type="text" placeholder="Описание модели" asp-for="info" class="input" />
+                <div class="button">
+                    <button class="button btnform">Создать пост</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </section>

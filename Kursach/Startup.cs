@@ -56,7 +56,7 @@ namespace Kursach
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Glavnya}/{id?}");
+                    pattern: "{controller=Home}/{action=Glavnaya}/{id?}");
             });
         }
     }

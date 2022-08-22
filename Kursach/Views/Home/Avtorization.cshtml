@@ -7,22 +7,86 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="~/css/StyleSheet.css" />
-<section class="form">
-    <div class="contanier">
-        <h2 class="title">Авторизация</h2>
-<a href="C:\Users\ALEXS\Documents\MPT\3 Курс 2 часть\Курсовая\!!!!!BLOG\P50-3-19\P50-3-19\Models\ApplicationContex.cs">C:\Users\ALEXS\Documents\MPT\3 Курс 2 часть\Курсовая\!!!!!BLOG\P50-3-19\P50-3-19\Models\ApplicationContex.cs</a>
-        <form asp-action="Avtoriz" asp-controller="home" class="email">
-            <input type="text" placeholder="Логин" asp-for="login" class="input" />
-            <input type="password" placeholder="Пароль" asp-for="password" class="input" />
-            <input type="submit" value="Авторизоваться" class="button btnformi" />
-            <input type="submit" value="Вернуться" class="button btnformi1" asp-action="Glavnaya" asp-controller="home" />
-        </form>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="~/css/StyleRegist.css" />
+<header class="header" id="start">
+    <div class="container">
+        <div class="wrapper">
+            <div class="logo">
+                <img src="/img/Logo.png" alt="Logo">
+            </div>
+            <nav class="navigation">
+                <a asp-action="Glavnaya" asp-controller="home" class="li">Главная</a>
+                <a asp-action="Registration" class="li">Регистрация</a>
+            </nav>
+        </div>
+        <div class="button-navigation">
+            <button class="scroll-bar">
+                <a href="#start"><img src="/img/scroll-up.svg" alt="scroll-bar"></a>
+            </button>
+        </div>
     </div>
-    <footer class="footer">
-        <img src="/img/logofooter1.png" alt="Логотип" class="logofooter">
-        <p class="end">
-            © Все права защищены правообладателем
-        </p>
-    </footer>
+</header>
+<section class="contact" id="contact-id">
+    <div class="contant-wrapper">
+        <div class="Cont">
+            <div class="title-contact">
+                <h2>Авторизация</h2>
+            </div>
+            <div class="sub-title-contact">
+                <p>
+                    Авторизируйся и пройди последний шаг перед безграничным количеством скидок
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="review-wrapper">
+        <div class="form">
+            <form asp-action="Avtoriz" asp-controller="home" class="review">
+                <input type="text" placeholder="Логин" asp-for="login" class="input" />
+                <input type="password" placeholder="Пароль" asp-for="password" class="input" />
+                <div class="button">
+                    <button class="button btnform">Войти</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="contact co" id="contact-id">
+    <div class="contant-wrapper">
+        <div class="Cont">
+            <div class="title-contact">
+                <h2>Контакты</h2>
+            </div>
+            <div class="sub-title-contact">
+                <p>
+                    Мы открыты с нашей аудиторией, и вы запросто можете увидеть всю информацию о нас
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="review-wrapper">
+        <div class="form1">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7560.8738368463!2d37.47836388401821!3d55.70878366831949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54c22123286e1%3A0xdb166cb0d2e66138!2z0J7QsdGJ0LXQttC40YLQuNC1INCg0K3QoyDQuNC8LiDQky7Qki4g0J_Qu9C10YXQsNC90L7QstCw!5e0!3m2!1sru!2sru!4v1655047985181!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="details">
+            <div class="name-details">
+                <p>детали</p>
+            </div>
+            <div class="mail-details">
+                <a href="mailto:alexstor2003@gmail.com">alexstor2003@gmail.com</a>
+            </div>
+            <div class="phone-details">
+                <a href="tel:+7(926)-174-39-49">+7(926)-174-39-49</a>
+            </div>
+            <div class="adres">
+                <p>
+                    Нежинская ул. дом 7 к. 1<br>
+                    Russia
+                </p>
+            </div>
+        </div>
+    </div>
 </section>

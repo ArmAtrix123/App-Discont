@@ -6,22 +6,40 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="~/css/StyleSheet.css" />
-<section class="form">
-    <div class="contanier">
-        <h2 class="title">Ошибка</h2>
-        <div>
-            <p class="cena">Привет мой дорогой друг</p>
-            <p class="cena">Если ты видишь эту страницу, это значит, что ты видимо забыл свой пароль или логин и ввел его неправильно</p>
-            <p class="cena">Попробуй вернуться, и сделать все правильно, Всего тебе хорошего</p>
-            <img src="/img/cat.jpg" alt="Кот" width="300" style="margin-left:450px">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="~/css/StyleRegist.css" />
+<header class="header" id="start">
+    <div class="container">
+        <div class="wrapper" link="#39445f">
+            <div class="logo">
+                <img src="/img/Logo.png" alt="Logo">
+            </div>
+            <nav class="navigation">
+                <a asp-action="Avtorization" asp-controller="Home" class="li">Назад</a>
+            </nav>
+        </div>
+        <div class="button-navigation">
+            <button class="scroll-bar">
+                <a href="#start"><img src="/img/scroll-up.svg" alt="scroll-bar"></a>
+            </button>
         </div>
     </div>
-    <footer class="footer">
-        <img src="/img/logofooter1.png" alt="Логотип" class="logofooter">
-        <p class="end">
-            © Все права защищены правообладателем
-        </p>
-    </footer>
+</header>
+<section class="contact conta" id="contact-id">
+    <div class="contant-wrapper">
+        <div class="Cont">
+            <div class="title-contact">
+                <h2>Ошибка</h2>
+            </div>
+            <div class="sub-title-contact">
+                <p>
+                    Здравствуй, друг, если ты видишь эту страницу<br/>
+                    Значит ты видимо неправильно ввел пароль или логин<br />
+                    Вернись и попробуй снова. Удачных скидок тебе!
+                </p>
+            </div>
+        </div>
+    </div>
 </section>

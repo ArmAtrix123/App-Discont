@@ -1,0 +1,250 @@
+﻿body {
+    font-family: sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/*-------------------Header-------------------*/
+.header {
+    background-color: #181A1C;
+    padding: 25px 160px;
+}
+
+.container {
+    max-width: 1595px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+.li {
+    font-size: 20px;
+    margin-right: 45px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: bold;
+    cursor: pointer;
+}
+
+    .li:hover {
+        color: #E9C12B;
+        transition: 0.3s;
+    }
+
+.button-navigation {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    right: 30px;
+    bottom: 28%;
+}
+
+.scroll-bar {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+.contact {
+    background-color: #2F3238;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.conta {
+    height: 820px;
+}
+.co {
+    background-color: #232528;
+}
+
+.contant-wrapper {
+    text-align: center;
+}
+
+.Cont {
+    text-align: center;
+}
+
+.title-contact {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    .title-contact h2 {
+        font-size: 46px;
+        text-transform: uppercase;
+        color: white;
+    }
+
+.sub-title-contact {
+    font-size: 26px;
+    color: #FECE1A;
+    margin-bottom: 40px;
+}
+
+.review-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 150px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.input {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Titillium Web', sans-serif;
+    width: 790px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #6F6F6F;
+    background: #292C31;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.textarea-message {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Titillium Web', sans-serif;
+    width: 790px;
+    padding-bottom: 272px;
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #6F6F6F;
+    background: #292C31;
+    border: none;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.button-send-mail {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    background-color: #6F6F6F;
+    cursor: pointer;
+    margin-top: 35px;
+}
+
+    .button-send-mail:hover {
+        transition: 0.3s;
+        background-color: #FFE892;
+        cursor: pointer;
+    }
+.button {
+    border-radius: 1    0px;
+    padding: 14px 70px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    display: block;
+    width: 150px;
+    text-align: center;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    font-size: 24px;
+}
+.btnform {
+    font-weight: bold;
+    font-weight: 600px;
+    border: 3px solid black;
+    cursor: pointer;
+    width: 400px;
+    background: none;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+}
+
+    .btnform:hover {
+        background-color: black;
+        color: white;
+        transition: 0.3s;
+    }
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-details {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.mail-details {
+    color: #6F6F6F;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.phone-details {
+    color: #6F6F6F;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.adres {
+    color: #6F6F6F;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 24px;
+}
+
+.mail-details a {
+    text-decoration: none;
+    color: #6F6F6F;
+}
+
+.phone-details a {
+    text-decoration: none;
+    color: #6F6F6F;
+}
+
+.mail-details a:hover {
+    color: #FFE892;
+    transition: 0.3s;
+}
+
+.phone-details a:hover {
+    color: #FFE892;
+    transition: 0.3s;
+}

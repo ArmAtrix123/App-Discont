@@ -10,16 +10,10 @@ namespace Kursach.Models
     {
     [Key] 
     public int ID_Model { get; set; }
-   
         public string Model { get; set; }
         public string skidki { get; set; }
         public string picture { get; set; }
         public string info { get; set; }
 
     }
-
-
-
-   
-    
 }

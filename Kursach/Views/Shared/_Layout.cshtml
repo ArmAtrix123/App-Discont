@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - DesiBlog</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/StyleSheet.css" />
+    <link rel="stylesheet" href="~/css/style1.css" />
 </head>
 <body>
-    <header class="header">
-        <div class="shapka">
-            <img src="/img/logo.png" alt="Логотип" class="logo">
-        </div>
-    </header>
     <div>
         <main role="main">
             @RenderBody()
         </main>
     </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="made">
+                <p>
+                    Made with love in Moscow<br>
+                    Copyright © 2022 Sasha
+                </p>
+            </div>
+        </div>
+    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

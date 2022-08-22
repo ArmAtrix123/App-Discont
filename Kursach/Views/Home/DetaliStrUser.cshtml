@@ -7,11 +7,38 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="~/css/StyleSheet.css" />
-<section class="form">
-    <div class="contanier avtoriz">
-        <h2 class="title">Ваши данные</h2>
-        <div>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="~/css/style1.css" />
+<header class="header" id="start">
+    <div class="container">
+        <div class="wrapper">
+            <div class="logo">
+                <img src="/img/Logo.png" alt="Logo">
+            </div>
+            <nav class="navigation">
+                <a asp-action="GlavnayaUser" asp-controller="Home" class="li">Назад</a>
+                <a asp-action="Glavnaya" asp-controller="Home" class="li">Выйти</a>
+            </nav>
+        </div>
+        <div class="button-navigation">
+            <button class="scroll-bar">
+                <a href="#start"><img src="/img/scroll-up.svg" alt="scroll-bar"></a>
+            </button>
+        </div>
+    </div>
+</header>
+<section class="about abou">
+    <div class="about-wrapper">
+        <div class="Abo">
+            <div class="title-contact">
+                <h2>Ваши данные</h2>
+            </div>
+        </div>
+    </div>
+    <div class="review-wrapper">
+        <div class="form2">
             <dl class="delete">
                 <dt class="col-sm-2">
                     @Html.DisplayNameFor(model => model.Id_user)
@@ -65,14 +92,5 @@
                 </dd>
             </dl>
         </div>
-        <div>
-            <a asp-action="GlavnayaUser" class="ssilka">Вернуться</a>
-        </div>
     </div>
-    <footer class="footer">
-        <img src="/img/logofooter1.png" alt="Логотип" class="logofooter">
-        <p class="end">
-            © Все права защищены правообладателем
-        </p>
-    </footer>
 </section>
